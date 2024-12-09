@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-secondary fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand ms-5" href="#"><i class="bi bi-amazon"></i></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Home <i class="bi bi-house"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#tabout"
+                >About <i class="bi bi-file-earmark-person"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#tteam"
+                >Team <i class="bi bi-microsoft-teams"></i
+              ></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-light"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Action <i class="bi bi-crosshair"></i
+                  ></a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Another action <i class="bi bi-crosshair"></i
+                  ></a>
+                </li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#"
+                    >Something else here <i class="bi bi-crosshair"></i
+                  ></a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-light"
+                >Services <i class="bi bi-alexa"></i
+              ></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-light"
+                >Mission <i class="bi bi-ticket"></i
+              ></a>
+            </li>
+          </ul>
+          <form class="d-flex me-5">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn border-light text-light d-flex" type="submit">
+              Search <i class="bi bi-search ms-2"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- crousel -->
+    <div
+      id="carouselExampleCaptions"
+      class="carousel slide"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="https://images.unsplash.com/photo-1660664026116-cfe1a0c3be65?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8c2ltcGxlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1660306630560-0ca0e7f47508?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHNpbXBsZSUyMGJhY2tncm91bmR8ZW58MHx8MHx8fDA%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://images.unsplash.com/photo-1622737133809-d95047b9e673?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c2ltcGxlJTIwYmFja2dyb3VuZHxlbnwwfHwwfHx8MA%3D%3D"
+            class="d-block w-100"
+            alt="..."
+          />
+          <div class="carousel-caption d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- crousel end -->
+    <!-- Container -->
+    <div class="container">
+      <!-- section 1 -->
+      <section>
+        <div class="t d-flex">
+          <h2>
+            <span id="tabout" class="sa border-bottom border-1 border-dark"
+              >About</span
+            >
+          </h2>
+        </div>
+      </section>
+      <section class="About">
+        <div class="section">
+          <div class="img1">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tdW5pY2F0aW9ufGVufDB8fDB8fHww"
+              alt=""
+            />
+          </div>
+          <div class="disc">
+            <h2>About Our Team</h2>
+            <h3>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+              eos.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, voluptas. Officia illum quibusdam maiores maxime,
+              commodi obcaecati labore ipsa nihil non aliquid, nostrum est
+              corporis deserunt quidem consequuntur vel ex. Reiciendis,
+              voluptas. Officia illum quibusdam maiores maxime, commodi
+              obcaecati labore ipsa nihil non aliquid, nostrum est corporis
+              deserunt quidem consequuntur vel ex.
+            </p>
+
+            <button>Click here</button>
+          </div>
+        </div>
+      </section>
+      <!-- section 2 -->
+      <section>
+        <div class="t d-flex">
+          <h2>
+            <span id="tteam" class="sa border-bottom border-1 border-dark"
+              >Team</span
+            >
+          </h2>
+        </div>
+      </section>
+      <section class="About">
+        <div class="section">
+          <div class="disc">
+            <h2>About Our Team</h2>
+            <h3>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam,
+              eos.
+            </h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Reiciendis, voluptas. Officia illum quibusdam maiores maxime,
+              commodi obcaecati labore ipsa nihil non aliquid, nostrum est
+              corporis deserunt quidem consequuntur vel ex. Reiciendis,
+              voluptas. Officia illum quibusdam maiores maxime, commodi
+              obcaecati labore ipsa nihil non aliquid, nostrum est corporis
+              deserunt quidem consequuntur vel ex.
+            </p>
+
+            <button>Click here</button>
+          </div>
+          <div class="img2">
+            <img
+              src="https://plus.unsplash.com/premium_photo-1661767467261-4a4bed92a507?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y29tdW5pY2F0aW9ufGVufDB8fDB8fHww"
+              alt=""
+            />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="t d-flex">
+          <h2>
+            <span class="sa border-bottom border-1 border-dark">Info</span>
+          </h2>
+        </div>
+      </section>
+      <!-- section 3 -->
+      <section class="About">
+        <div class="section1">
+          <div class="em">
+            <iframe
+              width="630"
+              height="315"
+              src="https://www.youtube.com/embed/HcOc7P5BMi4?si=Xhf4dTvBVgwy1n6e"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="em">
+            <iframe
+              width="630"
+              height="315"
+              src="https://www.youtube.com/embed/ESnrn1kAD4E?si=nwJVsFHWGL_nFQgF"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="content">
+        <div class="company">
+          <ul>
+            <li>company</li>
+            <li>
+              <a href="#"
+                ><img
+                  class="cimg"
+                  src="https://images.unsplash.com/photo-1727899484519-5efad2ab0d8f?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt=""
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="usefullinks">
+          <h6>Useful Links</h6>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="additionallinks">
+          <h6>Addional Links</h6>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#"> support</a></li>
+          </ul>
+        </div>
+        <div class="fsearch">
+          <h6>Search</h6>
+          <div class="sercing">
+            <input type="search" /><button>search</button>
+          </div>
+          <ul>
+            <li><a href="#">Follow Us</a></li>
+          </ul>
+          <div class="icons">
+            <div class="facebook">
+              <a href="#">
+                <i class="bi bi-facebook"></i>
+              </a>
+            </div>
+            <div class="twiter">
+              <a href="#">
+                <i class="bi bi-twitter"></i>
+              </a>
+            </div>
+            <div class="instagram">
+              <a href="#"><i class="bi bi-instagram"></i> </a>
+            </div>
+            <div class="linkdin">
+              <a href="#"><i class="bi bi-linkedin"></i> </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
